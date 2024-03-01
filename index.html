@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+
 	<title>ПРО КИНО</title>
-	<style>
-		.visually-hidden {
-			position: fixed;
-			transform: scale(0);
-		}
-	</style>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
 					<time datetime="2024-02-22">22 февраля</time>
 				</p>
 
-				<a href="#about">
+				<a class="hero__link" href="#about">
 					<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<circle cx="32" cy="32" r="31.5" stroke="white" />
 						<path
@@ -45,23 +44,28 @@
 
 		<section class="about" id="about">
 			<div class="container about__container">
-				<div class="about__information">
+				<div class="about__content">
 					<h2 class="about__title">Аватар: Легенда об Аанге</h2>
-					<div class="about__text">
-						<p>Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха.
-							В возрасте 11
-							лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против
-							остального
-							мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или
-							воздух. Аанг —
-							единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения
-							нацией Огня.
-							Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует
-							изгнанный
-							принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.</p>
-					</div>
+					<p class="about__description">Сюжет рассказывает о&nbsp;мальчике из&nbsp;племени воздушных кочевников, Аанге,
+						способном покорять стихию воздуха.
+						В&nbsp;возрасте 11&nbsp;лет, он&nbsp;узнал, что он&nbsp;Аватар&nbsp;&mdash; властелин четырёх стихий. Мир
+						погряз
+						в&nbsp;многолетней войне нации Огня против остального мира, в&nbsp;котором определённые люди способны
+						покорять одну
+						из&nbsp;четырёх стихий&nbsp;&mdash; воду, землю, огонь или воздух. Аанг&nbsp;&mdash; единственный, кто
+						способен покорить
+						все элементы и&nbsp;будучи Аватаром, он&nbsp;должен спасти мир от&nbsp;уничтожения нацией Огня.
+						Со&nbsp;своими новыми
+						друзьями, Катарой и&nbsp;Соккой, Аанг отправляется овладевать стихиями, попутно их&nbsp;преследует изгнанный
+						принц нации
+						Огня&nbsp;&mdash; Зуко, который хочет вернуть себе честь, поймав Аватара.</p>
 				</div>
-				<img src="img/img.jpg" alt="" class="about__image">
+				<picture class="about__pic">
+					<source srcset="img/img320.jpg" media="(min-width: 320px)">
+					<source srcset="img/img768.jpg" media="(min-width: 768px)">
+					<source srcset="img/img1024.jpg" media="(min-width: 1024px)">
+					<img class="about__image" src="img/img.jpg" alt="Аанг на Аппа" class="about__image">
+				</picture>
 			</div>
 		</section>
 
@@ -97,7 +101,7 @@
 				<li class="footer__developer">Designer:
 					<a class="footer__link" href="">Anastasia Ilina</a>
 				</li>
-				<li class="footer__developer">Developer::
+				<li class="footer__developer">Developer:
 					<a class="footer__link" href="">Anastasia Ilina</a>
 				</li>
 			</ul>
