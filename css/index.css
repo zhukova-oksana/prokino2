@@ -273,6 +273,7 @@ iframe {
 }
 
 .trailers__wrapper {
+	display: none;
 	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
@@ -449,6 +450,27 @@ iframe {
 		padding: 40px 0 80px;
 	}
 
+	.footer {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	.footer__container {
+		gap: 20px;
+	}
+
+	.footer__developers {
+		font-size: 12px;
+	}
+
+	.footer__copyright {
+		font-size: 12px;
+	}
+
+	.footer__logo {
+		width: 217px;
+	}
+
 }
 
 @media(max-width: 620px) {
@@ -538,6 +560,18 @@ iframe {
 
 	.trailers__list {
 		padding: 0 16px;
+	}
+
+	.footer__container {
+		grid-template-areas: 
+		'logo'
+		'developers'
+		'copyright';
+	}
+
+	.footer__logo {
+		justify-self: start;
+		margin-bottom: 4px;
 	}
 	
 }

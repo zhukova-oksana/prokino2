@@ -13,6 +13,8 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 
+	<script src="js/index.js" defer></script>
+
 	<title>ПРО КИНО</title>
 </head>
 
@@ -79,24 +81,21 @@
 			<div class="container trailers__container">
 				<ul class="trailers__buttons">
 					<li class="trailers__item-button">
-						<button class="trailers__button trailers__button_active">трейлер 1</button>
+						<button class="trailers__button trailers__button_active" aria-label="Первый трейлер"
+							data-src="https://www.youtube.com/embed/ByAn8DF8Ykk">трейлер
+							1</button>
 					</li>
 					<li class="trailers__item-button">
-						<button class="trailers__button">трейлер 2</button>
+						<button class="trailers__button" aria-label="Второй трейлер"
+							data-src="https://www.youtube.com/embed/waJKJW_XU90">трейлер 2</button>
 					</li>
 					<li class="trailers__item-button">
-						<button class="trailers__button">трейлер 3</button>
+						<button class="trailers__button" aria-label="Третий трейлер"
+							data-src="https://www.youtube.com/embed/Cw12Dat8bkE">трейлер 3</button>
 					</li>
 				</ul>
 
-				<ul class="trailers__list">
-					<li class="trailers__item">
-						<div class="trailers__wrapper">
-							<iframe class="trailers__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk?si=8-aAdIP_aNrg6UJA"
-								title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</li>
-				</ul>
+
 			</div>
 		</section>
 	</main>
