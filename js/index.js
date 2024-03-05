@@ -77,13 +77,13 @@ const createListTrailers = (parrent, srcList) => {
 	return {trailerWrappers, trailerFrames}
 }
 
-const controlTrailer = (trailerWrappers, trailerFrame, i = 0, j = 0) => {	
+const controlTrailer = (trailerWrappers, trailerFrames, i = 0, j = 0) => {	
 	if (i !== j) {
-		trailerWrappers[i].style.display = "none";
-		trailerFrame[i].src = '';
+		trailerWrappers[i].style.display = "none";		
+		trailerFrames[i].srcdoc = '';
 	} else {
 		trailerWrappers[i].style.display = 'block';
-		trailerFrame[i].src = trailerFrame[i].dataset.src;
+		trailerFrames[i].srcdoc = trailerFrames[i].dataset.srcdoc;
 	}
 }
 
@@ -100,6 +100,7 @@ const init = () => {
 	const {trailerWrappers, trailerFrames} = createListTrailers(trailersContainer, srcList);
 
 	trailersButtons.forEach((btn, j) => {
+		trailerFrames[j].dataset.srcdoc = trailerFrames[j].srcdoc;
 		btn.addEventListener('click', () => {
 			trailersButtons.forEach((tBtn, i) => {
 				if (tBtn === btn) {
